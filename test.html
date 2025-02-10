@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarity Poster</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .poster {
+            position: relative;
+            width: 600px;
+            height: 100%;
+            display: flex;
+            gap:20px;
+            padding: 50px 0;
+        }
+
+        .left-section {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: stretch;
+            width: 50%;
+            padding-left: 30px;
+        }
+
+        .bar {
+            width: 50px;
+            background-color: #C0392B;
+            flex-grow: 1;
+        }
+
+        .right-section {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: left;
+        }
+
+        .top-text {
+            font-size: 12px;
+            transform: rotate(90deg) translateX(50%);
+            white-space: nowrap;
+            text-align: right;
+            font-size:8px;
+            align-self: flex-end;
+        }
+        
+        .title {
+            font-size: 60px;
+            font-weight: bold;
+            line-height: 1;
+            text-align: left;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            line-height: 1.4;
+            text-align: left;
+        }
+
+        .bottom {
+            font-size: 22px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .date-time {
+            font-size: 28px;
+        }
+
+        .highlight {
+            color: #C0392B;
+        }
+
+        .location {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .small-text {
+            font-size: 12px;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="poster">
+        <div class="left-section">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <div class="right-section">
+            <div class="top-text">Typography Research | Helvetica Inspired</div>
+
+
+            <div>
+                <div class="title">clarity</div>
+                <div class="subtitle">A short story about the <br>International Typographic Style</div>
+            </div>
+
+            <div class="bottom">
+                <div class="date-time">
+                    17<span class="highlight">|</span>02 &nbsp; 10:00
+                </div>
+                <div class="location">αμφιθέατρο Κραναού</div>
+                <div class="small-text">Παρουσίαση Ερευνητικής Εργασίας <br>Κλάδου Γραμματικής</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
